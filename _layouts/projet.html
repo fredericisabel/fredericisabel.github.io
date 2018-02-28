@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.title }}</title>
+</head>
+<body>
+	<h2>{{ page.title }}</h2>
+	<p>{{ content }}</p>
+	{% for file in site.static_files %}
+
+			<p>{{file.path}}</p>
+
+	{% endfor %}
+</body>
+</html>
