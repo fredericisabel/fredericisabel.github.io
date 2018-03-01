@@ -24,7 +24,7 @@
 	<main class="fixed_background">
 		<div id="grille_projets">
 		{% for post in site.posts %}
-			<div onclick="javascript:location.href='{{ site.baseurl }}{{ post.url }}'">
+			<div onclick="javascript:location.href='{{ site.baseurl }}{{ post.url }}'" style="background-image: url({{ site.baseurl }}{{ post.urlimgcover }})">
 				<h2>{{ post.title }}</h2>
 				<h4>{{ post.type }}</h4>
 			</div>

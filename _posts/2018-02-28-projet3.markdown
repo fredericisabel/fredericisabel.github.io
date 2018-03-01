@@ -1,10 +1,16 @@
 ---
+
 layout: projet
-id: projet3
-title: Projet 3
-type: Animation
 date: 2018-02-28 15:28:48 -0500
 permalink: projet/:title
----
 
-Some content lul
+title: Projet 3
+type: Animation
+text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet suscipit nunc. Morbi pretium sed dui id hendrerit. Sed tincidunt varius cursus. Suspendisse eu ultricies nulla. Maecenas eu ipsum ex. Nunc lacinia gravida nunc et suscipit<br><br>Morbi in viverra massa. Morbi tincidunt, velit ut placerat luctus, nisl tellus luctus neque, vel dignissim est ipsum id neque. Phasellus eu urna eget.
+images: 2
+
+urlimgcover: /img/img_cours1.png
+urlimg1: ../img/img_cours1.png
+urlimg2: ../img/img_cours1.png
+
+---
