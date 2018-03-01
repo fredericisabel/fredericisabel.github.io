@@ -37,27 +37,6 @@ body{
 	background-color: $cTurquoise;
 }
 
-/* === Média: Mobile (150px) === */
-/* --- Polices --- */
-h1{ /* Titre page accueil */
-	font-size: $h1Size / 2.2;
-}
-
-h2{ /* Titre projets page accueil */
-	font-size: $h2Size / 2.2;
-}
-
-h3{ /* Header page projet */
-	font-size: $h3Size / 1.5;
-}
-
-h4{ /* Sous-titres projets page accueil / Titre projets page projet */
-	font-size: $h4Size / 1.5;
-}
-
-p{  /* Footer / texte projets */
-	font-size: $pSize / 1.75;
-}
 /* --- Header --- */
 #body_accueil header{
 	display: flex;
@@ -65,9 +44,8 @@ p{  /* Footer / texte projets */
 
 	height: 90vh;
 	max-width: 100vw;
-	$opacite: $headerFade;
 	background: linear-gradient($cBleuFonce, $cBleuFonce),
-	url({{site.url}}/img/img_background1.jpg);
+	url(../img/img_background1.jpg);
 	background-blend-mode: multiply;
 
 	div{
@@ -84,16 +62,15 @@ p{  /* Footer / texte projets */
 }
 
 /* --- Main contenu --- */
-main{
+#body_accueil main{
 	height: 155vh;
 	max-width: 100vw;
 
 	display: flex;
 	align-content: center;
-	$opacite: $mainFade;
-	background: linear-gradient($cBlanc, $cBlanc),
-	url({{site.url}}/img/main2.jpg);
-	background-blend-mode: none;
+	background: linear-gradient($cGris, $cGris),
+	url(../img/main2.jpg);
+	background-blend-mode: lighten;
 
 	#grille_projets{
 		display: flex;
@@ -120,7 +97,7 @@ main{
 				margin: 0;
 				cursor: pointer;
 
-				background: url({{site.url}}/img/img_cours1.png);
+				background: url(../img/img_cours1.png);
 			    background-repeat: no-repeat;
 			    background-size: cover;
 
@@ -147,7 +124,7 @@ main{
 	height: 60vh;
 	max-width: 100vw;
 	background: linear-gradient(opacify($cBleuFonce, $headerFade), opacify($cBleuFonce, $headerFade)),
-	url({{site.url}}/img/img_background1.jpg);
+	url(../img/img_background1.jpg);
 	background-blend-mode: multiply;
 
 	/* --- Conteneur texte et médias sociaux --- */
@@ -195,26 +172,6 @@ main{
 
 /* === Média: Tablette (640px) === */
 @media(min-width: 640px){
-/* --- Polices --- */
-h1{ /* Titre page accueil */
-	font-size: $h1Size * 0.57;
-}
-
-h2{ /* Titre projets page accueil */
-	font-size: $h2Size * 0.85;
-}
-
-h3{ /* Header page projet */
-	font-size: $h3Size * 0.85;
-}
-
-h4{ /* Sous-titres projets page accueil / Titre projets page projet */
-	font-size: $h4Size * 0.85;
-}
-
-p{  /* Footer / texte projets */
-	font-size: $pSize * 0.85;
-}
 /* --- Header --- */
 #body_accueil header{
 	height: 95vh;
@@ -238,9 +195,9 @@ p{  /* Footer / texte projets */
 	display: flex;
 	align-content: center;
 	$opacite: $mainFade;
-	background: linear-gradient($cBlanc, $cBlanc),
-	url({{site.url}}/img/main2.jpg);
-	background-blend-mode: none;
+	background: linear-gradient($cGris, $cGris),
+	url(../img/main2.jpg);
+	background-blend-mode: lighten;
 
 	#grille_projets{
 		display: flex;
@@ -270,7 +227,7 @@ p{  /* Footer / texte projets */
 				margin: 1%;
 				transition: box-shadow 0.5s;
 
-				background: url({{site.url}}/img/img_cours1.png);
+				background: url(../img/img_cours1.png);
 			    background-repeat: no-repeat;
 			    background-size: cover;
 
@@ -339,26 +296,6 @@ p{  /* Footer / texte projets */
 @media(min-width: 1071px){
 #body_accueil header h1{
 	margin-bottom: 5vw;
-}
-/* --- Polices --- */
-h1{ /* Titre page accueil */
-	font-size: $h1Size;
-}
-
-h2{ /* Titre projets page accueil */
-	font-size: $h2Size;
-}
-
-h3{ /* Header page projet */
-	font-size: $h3Size;
-}
-
-h4{ /* Sous-titres projets page accueil / Titre projets page projet */
-	font-size: $h4Size;
-}
-
-p{  /* Footer / texte projets */
-	font-size: $pSize;
 }
 }
 
