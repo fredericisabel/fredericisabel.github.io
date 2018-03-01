@@ -9,8 +9,9 @@ body{
 
 .fixed_background{
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 /* --- Séparation des sections --- */

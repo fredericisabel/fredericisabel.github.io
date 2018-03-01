@@ -29,23 +29,37 @@ $pSize: 1.25rem; /*$pSize: 18px;*/
 /* --- Polices --- */
 h1{ /* Titre page accueil */
 	font-size: $h1Size / 2.2;
+	font-family: 'Oswald', sans-serif;
 	z-index: 3;
+	font-weight: bold;
+	color: $cBlanc;
 }
 
 h2{ /* Titre projets page accueil */
 	font-size: $h2Size / 2.2;
+	font-family: 'Bree Serif', serif;
+	font-weight: normal;
+	color: $cRose;
 }
 
 h3{ /* Header page projet */
 	font-size: $h3Size / 1.5;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	color: $cBlanc;
 }
 
 h4{ /* Sous-titres projets page accueil / Titre projets page projet */
 	font-size: $h4Size / 1.5;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 500;
+	color: $cBlanc;
 }
 
 p{  /* Footer / texte projets */
 	font-size: $pSize / 1.75;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: $cBlanc;
 }
 
 /* === Média: Tablette (640px) === */
@@ -75,37 +89,23 @@ p{  /* Footer / texte projets */
 /* === Média: Tablette Breakpoint (1071px) === */
 @media(min-width: 1071px){
 h1{ /* Titre page accueil */
-	font-family: 'Oswald', sans-serif;
 	font-size: $h1Size;
-	font-weight: bold;
-	color: $cBlanc;
 }
 
 h2{ /* Titre projets page accueil */
-	font-family: 'Bree Serif', serif;
 	font-size: $h2Size;
-	font-weight: normal;
-	color: $cRose;
 }
 
 h3{ /* Header page projet */
-	font-family: 'Oswald', sans-serif;
 	font-size: $h3Size;
-	font-weight: 500;
-	color: $cBlanc;
 }
 
 h4{ /* Sous-titres projets page accueil / Titre projets page projet */
-	font-family: 'Merriweather Sans', sans-serif;
 	font-size: $h4Size;
-	font-weight: 500;
-	color: $cBlanc;
 }
 
 p{  /* Footer / texte projets */
-	font-family: 'Merriweather Sans', sans-serif;
 	font-size: $pSize;
-	color: $cBlanc;
 }
 }
 

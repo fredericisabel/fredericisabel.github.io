@@ -22,34 +22,50 @@
 	</div>
 	<main class="fixed_background">
 		<div id="grille_projets">
-			<div id="rangee_1" class="grille_rangee">
-				<div id="" class="div_rose">
-					<h2>Titre projet</h2>
-					<h4>Type de projet</h4>	
+		{% for post in site.posts %}
+			{% case forloop.index %}
+			{% when 1%}
+				<div id="rangee_1" class="grille_rangee">
+					<div class="div_turquoise">
+						<h2>{{ post.title }}</h2>
+						<h4>Type de projet</h4>	
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
+			{% when 2 %}
+					<div class="div_rose">
+						<h2>{{ post.title }}</h2>
+						<h4>Type de projet</h4>	
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
+			{% when 3 %}
+					<div class="div_bleuFonce">
+						<h2>{{ post.title }}</h2>
+						<h4>Type de projet</h4>	
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
 				</div>
-				<div id="" class="div_bleuFonce">
-					<h2>Titre projet</h2>
-					<h4>Type de projet</h4>	
+			{% when 4%}
+				<div id="rangee_2" class="grille_rangee">
+					<div class="div_turquoise">
+						<h2>{{ post.title }}</h2>
+						<h4>Type de projet</h4>	
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
+			{% when 5 %}
+					<div class="div_rose">
+						<h2>{{ post.title }}</h2>
+						<h4>Type de projet</h4>	
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
+			{% when 6 %}
+					<div class="div_bleuFonce">
+						<h2>{{ post.title }}</h2>
+						<h4>Type de projet</h4>	
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
 				</div>
-				<div id="" class="div_turquoise">
-					<h2>Titre projet</h2>
-					<h4>Type de projet</h4>	
-				</div>	
-			</div>
-			<div id="rangee_2" class="grille_rangee">
-				<div id="" class="div_bleuFonce">
-					<h2>Titre projet</h2>
-					<h4>Type de projet</h4>	
-				</div>
-				<div id="" class="div_turquoise">
-					<h2>Titre projet</h2>
-					<h4>Type de projet</h4>	
-				</div>
-				<div id="" class="div_rose">
-					<h2>Titre projet</h2>
-					<h4>Type de projet</h4>	
-				</div>	
-			</div>
+			{% endcase %}
+		{% endfor %}
 		</div>
 	</main>
 	<div class="division_couleurs">
