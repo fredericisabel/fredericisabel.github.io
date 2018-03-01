@@ -1,0 +1,136 @@
+/* === Variables LESS ===*/
+/* --- Couleurs site --- */
+$cBlanc: hsla(0,0%,100%,1); /*#ffffff*/
+$cBleuFonce: hsla(217,67%,16%,1); /*#0e2447*/
+$cTurquoise: hsla(186,84%,32%,1); /*#0d8896*/
+$cRose: hsla(339,77%,41%,1); /*#ba1850*/
+$cGris: hsla(0,0%,73%,1); /*#bcbcbc*/
+$cNoir: hsla(0,0%,0%,1); /*#000000*/
+/* --- Couleurs projets --- */
+$cJaune: hsla(49,83%,45%,1);
+$cMauve:hsla(277,82%,35%,1);
+$cVert:hsla(155,100%,44%,1);
+/* --- Paramètres d'opacité --- */
+$headerFade: 0.99;
+$mainFade: 0.7;
+/* --- Dimensions --- */
+$projetLargeur: 425px;
+$projetHauteur: $projetLargeur * 0.82;
+$hauteurGrille: 80%;
+/* --- Dimensions --- */
+$h1Size: 10rem; /*$h1Size: 124px;*/
+$h2Size: 2.75rem; /*$h2Size: 42px;*/
+$h3Size: 2rem; /*$h3Size: 32px;*/
+$h4Size: 1.75rem; /*$h4Size: 24px;*/
+$pSize: 1.25rem; /*$pSize: 18px;*/
+
+/* --- Polices --- */
+h1{ /* Titre page accueil */
+	font-family: 'Oswald', sans-serif;
+	font-size: $h1Size;
+	font-weight: bold;
+	color: $cBlanc;
+}
+
+h2{ /* Titre projets page accueil */
+	font-family: 'Bree Serif', serif;
+	font-size: $h2Size;
+	font-weight: normal;
+	color: $cRose;
+}
+
+h3{ /* Header page projet */
+	font-family: 'Oswald', sans-serif;
+	font-size: $h3Size;
+	font-weight: 500;
+	color: $cBlanc;
+}
+
+h4{ /* Sous-titres projets page accueil / Titre projets page projet */
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: $h4Size;
+	font-weight: 500;
+	color: $cBlanc;
+}
+
+p{  /* Footer / texte projets */
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: $pSize;
+	color: $cBlanc;
+}
+
+/* --- Box-shadow projets --- */
+.div_rose{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cRose, 0.2), 0.5), 15px 15px 30px opacify($cNoir, 0.8);
+
+	h2{
+		background-color: darken($cRose, 10%);
+	}
+}
+
+.div_turquoise{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cTurquoise, 0.2), 0.5), 15px 15px 30px opacify($cNoir, 0.8);
+
+	h2{
+		background-color: darken($cTurquoise, 10%);
+	}
+}
+
+.div_bleuFonce{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cBleuFonce, 0.2), 0.5), 15px 15px 30px opacify($cNoir, 0.8);
+
+	h2{
+		background-color: darken($cBleuFonce, 10%);
+	}
+}
+
+.div_jaune{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cJaune, 0.2), 0.5), 15px 15px 30px opacify($cNoir, 0.8);
+
+	h2{
+		background-color: darken($cJaune, 10%);
+	}
+}
+
+.div_mauve{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cMauve, 0.2), 0.5), 15px 15px 30px opacify($cNoir, 0.8);
+
+	h2{
+		background-color: darken($cMauve, 10%);
+	}
+}
+
+.div_vert{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cVert, 0.2), 0.5), 15px 15px 30px opacify($cNoir, 0.8);
+
+	h2{
+		background-color: darken($cVert, 10%);
+	}
+}
+
+/* === Média: Tablette (640px) === */
+@media(min-width: 640px){
+.div_rose:hover{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cRose, 0.2), 0%), 5px 5px 15px opacify($cNoir, 0.8);
+}
+
+.div_turquoise:hover{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cTurquoise, 0.2), 0%), 5px 5px 15px opacify($cNoir, 0.8);
+}
+
+.div_bleuFonce:hover{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cBleuFonce, 0.2), 0%), 5px 5px 15px opacify($cNoir, 0.8);
+}
+
+.div_jaune:hover{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cJaune, 0.2), 0%), 5px 5px 15px opacify($cNoir, 0.8);
+}
+
+.div_mauve:hover{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cMauve, 0.2), 0%), 5px 5px 15px opacify($cNoir, 0.8);
+}
+
+.div_vert:hover{
+	box-shadow: inset 0 0 0 1000px opacify(darken($cVert, 0.2), 0%), 5px 5px 15px opacify($cNoir, 0.8);
+}
+}

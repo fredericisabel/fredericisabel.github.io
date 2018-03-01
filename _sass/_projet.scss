@@ -1,0 +1,132 @@
+/* === Style commun === */
+/* --- Style général --- */
+@import "_variables";
+
+@media(min-width: 640px){
+#body_projet header{
+	width: 100vw;
+	height: 6vh;
+	padding-bottom: 5vh;
+	background-color: $cBleuFonce;
+	display: flex;
+	flex-direction: column;
+
+	h3{
+		max-width: 50%;
+		height: 100%;
+		line-height: 100%;
+		align-self: flex-end;
+		vertical-align: center;
+		text-align: right;
+		margin-right: 2vw;
+		
+	}
+}
+
+#body_projet main{
+	display: flex;
+	width: 100vw;
+	height: 100%;
+
+	#contenu_texte{
+		display: flex;
+		flex-direction: column;
+		width: 21%;
+		height: 100%;
+		background-color: $cGris;
+		padding: 2%;
+		text-align: justify;
+
+		h2{
+			margin-top: 1%;
+			margin-bottom: 3%;
+		}
+
+		h4{
+			margin-top: 1%;
+			margin-bottom: 3%;
+		}
+
+		p{
+			padding-bottom: 50px;
+		}
+	}
+
+	/* --- Séparation des sections --- */
+	.division_couleurs{
+		display: flex;
+		flex-direction: column;
+
+		height: 100%;
+		width: 2vw;
+		background-color: teal;
+
+		div{
+			height: 33.3vh;
+			width: 100%;
+			background-color: $cGris;
+		}
+	}
+
+	.div_couleur:first-child{
+		background-color: $cRose;
+	}
+
+	.div_couleur:last-child{
+		background-color: $cTurquoise;
+	}
+
+	#contenu_images{
+		display: flex;
+		align-self: center;
+		width: 75%;
+		height: 100%;
+		background-color: $cBlanc;
+
+		#conteneur_images{
+			display: flex;
+			flex-direction: column;
+			
+			width: 80%;
+			height: 80%;
+
+			.image_projet{
+				width: 100%;
+				height: 50%;
+				background-color: $cGris;
+			}
+		}
+	}
+}
+
+#body_projet footer{
+	width: 100vw;
+	max-height: 8vh;
+	background-color: $cBleuFonce;
+	display: flex;
+
+	#footer_copyright{
+		width: 85%;
+		margin-left: 2vw;
+	}
+
+	#medias_sociauxGrand{
+			display: flex;
+			flex-direction: row;
+			align-self: flex-end;
+
+			height: 20%;
+			width: 140px;
+			margin: 0 auto;
+
+			a{
+				padding: 2%;
+				height: 100%;
+			}
+		}
+
+		#medias_sociauxPetit{
+			display: none;
+		}
+}
+}
