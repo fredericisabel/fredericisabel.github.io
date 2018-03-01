@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Frédéric Isabel - Portfolio personnel</title>
+	<title>{{ site.title }} / {{ page.title }}</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather+Sans|Oswald" rel="stylesheet">
@@ -9,15 +9,13 @@
 </head>
 <body id="body_projet">
 	<header>
-		<h3>Frédéric Isabel</h3>
+		<h3><a href="{{ site.baseurl }}">{{ site.author }}</a></h3>
 	</header>
 	<main>
 		<div id="contenu_texte">
-			<h2>Titre</h2>
-			<h4>Sous-titre</h4>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet suscipit nunc. Morbi pretium sed dui id hendrerit. Sed tincidunt varius cursus. Suspendisse eu ultricies nulla. Maecenas eu ipsum ex. Nunc lacinia gravida nunc et suscipit
-			</p>
+			<h2>{{ page.title }}</h2>
+			<h4>{{ page.type }}</h4>
+			{{ page.content }}
 		</div>
 		<div class="division_couleurs">
 			<div class="div_couleur"></div>

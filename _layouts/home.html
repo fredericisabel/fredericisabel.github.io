@@ -26,19 +26,19 @@
 			{% case forloop.index %}
 			{% when 1%}
 				<div id="rangee_1" class="grille_rangee">
-					<div class="div_turquoise">
+					<div id="{{ post.id }}" class="div_turquoise">
 						<h2>{{ post.title }}</h2>
 						<h4>{{ post.type }}</h4>	
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 					</div>
 			{% when 2 %}
-					<div class="div_rose">
+					<div id="{{ post.id }}" class="div_rose">
 						<h2>{{ post.title }}</h2>
 						<h4>{{ post.type }}</h4>	
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 					</div>
 			{% when 3 %}
-					<div class="div_bleuFonce">
+					<div id="{{ post.id }}" class="div_bleuFonce">
 						<h2>{{ post.title }}</h2>
 						<h4>{{ post.type }}</h4>	
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -46,19 +46,19 @@
 				</div>
 			{% when 4%}
 				<div id="rangee_2" class="grille_rangee">
-					<div class="div_turquoise">
+					<div id="{{ post.id }}" class="div_turquoise">
 						<h2>{{ post.title }}</h2>
 						<h4>{{ post.type }}</h4>	
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 					</div>
 			{% when 5 %}
-					<div class="div_rose">
+					<div id="{{ post.id }}" class="div_rose">
 						<h2>{{ post.title }}</h2>
 						<h4>{{ post.type }}</h4>	
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 					</div>
 			{% when 6 %}
-					<div class="div_bleuFonce">
+					<div id="{{ post.id }}" class="div_bleuFonce">
 						<h2>{{ post.title }}</h2>
 						<h4>{{ post.type }}</h4>	
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
