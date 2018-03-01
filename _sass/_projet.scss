@@ -3,11 +3,18 @@
 @import "_variables";
 
 @media(min-width: 640px){
+
+#body_projet{
+	background: linear-gradient($cGris, $cGris),
+	url(../img/main2.jpg);
+	background-blend-mode: lighten;
+}
+
 #body_projet header{
 	width: 100vw;
 	height: 6vh;
 	padding-bottom: 5vh;
-	background-color: $cBleuFonce;
+	background-color: transparentize($cBleuFonce, 0.05);
 	display: flex;
 	flex-direction: column;
 
@@ -19,23 +26,24 @@
 		vertical-align: center;
 		text-align: right;
 		margin-right: 2vw;
-		
 	}
 }
 
 #body_projet main{
 	display: flex;
 	width: 100vw;
-	height: 100%;
+	height: 80vh;
 
 	#contenu_texte{
 		display: flex;
 		flex-direction: column;
 		width: 21%;
-		height: 100%;
-		background-color: $cGris;
+		height: 96%;
+		background-color: transparentize($cBlanc, 0.2);
 		padding: 2%;
 		text-align: justify;
+
+		background-blend-mode: multiply;
 
 		h2{
 			margin-top: 1%;
@@ -43,12 +51,13 @@
 		}
 
 		h4{
+			color: $cBleuFonce;
 			margin-top: 1%;
 			margin-bottom: 3%;
 		}
 
 		p{
-			padding-bottom: 50px;
+			color: $cBleuFonce;
 		}
 	}
 
@@ -59,7 +68,6 @@
 
 		height: 100%;
 		width: 2vw;
-		background-color: teal;
 
 		div{
 			height: 33.3vh;
@@ -80,20 +88,35 @@
 		display: flex;
 		align-self: center;
 		width: 75%;
-		height: 100%;
-		background-color: $cBlanc;
+		height: 80vh;
+		overflow: scroll;
 
 		#conteneur_images{
+			width: 80%;
+			height: auto;
 			display: flex;
 			flex-direction: column;
+			align-self: center;
+			margin: 0 auto;
+			padding-top: 5vh;
+			padding-bottom: 5vh;
+			background-color: transparentize($cBlanc, 0.2);
 			
-			width: 80%;
-			height: 80%;
+			img{
+				align-self: center;
+				align-content: center;
+				width: 80%;
+				height: auto;
+			}
 
-			.image_projet{
+			p{
 				width: 100%;
-				height: 50%;
-				background-color: $cGris;
+				height: 80%;
+
+				.image_projet{
+					max-width: 100%;
+	    			height: auto;
+				}
 			}
 		}
 	}
@@ -101,8 +124,9 @@
 
 #body_projet footer{
 	width: 100vw;
-	max-height: 8vh;
-	background-color: $cBleuFonce;
+	height: 5vh;
+	padding-bottom: 2vh;
+	background-color: transparentize($cBleuFonce, 0.05);
 	display: flex;
 
 	#footer_copyright{
@@ -120,13 +144,15 @@
 			margin: 0 auto;
 
 			a{
-				padding: 2%;
+				align-content: center;
+				align-self: center;
+				vertical-align: center;
 				height: 100%;
 			}
 		}
 
-		#medias_sociauxPetit{
-			display: none;
-		}
+	#medias_sociauxPetit{
+		display: none;
+	}
 }
 }

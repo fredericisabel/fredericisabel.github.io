@@ -3,6 +3,7 @@
 <head>
 	<title>{{ site.title }} / {{ page.title }}</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather+Sans|Oswald" rel="stylesheet">
 	<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -11,11 +12,11 @@
 	<header>
 		<h3><a href="{{ site.baseurl }}">{{ site.author }}</a></h3>
 	</header>
-	<main>
+	<main class="fixed_background">
 		<div id="contenu_texte">
 			<h2>{{ page.title }}</h2>
 			<h4>{{ page.type }}</h4>
-			{{ page.content }}
+			{{ page.text }}
 		</div>
 		<div class="division_couleurs">
 			<div class="div_couleur"></div>
@@ -24,8 +25,9 @@
 		</div>
 		<div id="contenu_images">
 			<div id="conteneur_images">
-				<div id="" class="image_projet"></div>
-				<div id="" class="image_projet"></div>
+				{% for i in (1..page.images) %}
+				<img src="{{ page.urlimg }}">
+				{% endfor %}
 			</div>
 		</div>
 	</main>
@@ -42,6 +44,6 @@
 			<a href=""><i class="fab fa-linkedin fa-3x" color="white""></i></a>
 		</div>
 	</footer>
-	<!-- <script src="js/script.js" type="text/javascript"></script> -->
+	<script src="../js/script.js" type="text/javascript"></script>
 </body>
 </html>

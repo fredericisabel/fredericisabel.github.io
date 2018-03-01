@@ -16,13 +16,27 @@ $mainFade: 0.7;
 /* --- Dimensions --- */
 $projetLargeur: 425px;
 $projetHauteur: $projetLargeur * 0.82;
-$hauteurGrille: 80%;
 /* --- Dimensions --- */
 $h1Size: 10rem; /*$h1Size: 124px;*/
 $h2Size: 2.75rem; /*$h2Size: 42px;*/
 $h3Size: 2rem; /*$h3Size: 32px;*/
 $h4Size: 1.75rem; /*$h4Size: 24px;*/
 $pSize: 1.25rem; /*$pSize: 18px;*/
+
+/* --- Body et fixed backgrounds --- */
+body{
+	display: flex;
+	flex-direction: column;
+	max-width: 100vw;
+	cursor: default;
+}
+
+.fixed_background{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
 
 /* --- Polices --- */
 /* === Média: Mobile (150px) === */
@@ -62,7 +76,7 @@ p{  /* Footer / texte projets */
 	color: $cBlanc;
 }
 
-a:visited, a:active{
+a, a:link, a:visited, a:active{
 	color: $cBlanc;
 	text-decoration: none;
 }
@@ -115,23 +129,7 @@ p{  /* Footer / texte projets */
 }
 
 /* --- Box-shadow projets --- */
-.div_rose{
-	box-shadow: inset 0 0 0 1000px transparentize(darken($cRose, 0.2), 0.6), 15px 15px 30px transparentize($cNoir, 0.2);
-
-	h2{
-		background-color: darken($cRose, 10%);
-	}
-}
-
-.div_turquoise{
-	box-shadow: inset 0 0 0 1000px transparentize(darken($cTurquoise, 0.2), 0.6), 15px 15px 30px transparentize($cNoir, 0.2);
-
-	h2{
-		background-color: darken($cTurquoise, 10%);
-	}
-}
-
-.div_bleuFonce{
+#grille_projets div:nth-child(3n+1){
 	box-shadow: inset 0 0 0 1000px transparentize(darken($cBleuFonce, 0.2), 0.6), 15px 15px 30px transparentize($cNoir, 0.2);
 
 	h2{
@@ -139,17 +137,33 @@ p{  /* Footer / texte projets */
 	}
 }
 
-/* === Média: Tablette (640px) === */
-@media(min-width: 640px){
-.div_rose:hover{
-	box-shadow: inset 0 0 0 1000px transparentize(darken($cRose, 0.2), 1), 5px 5px 15px transparentize($cNoir, 0.2);
+#grille_projets div:nth-child(3n+2){
+	box-shadow: inset 0 0 0 1000px transparentize(darken($cTurquoise, 0.2), 0.6), 15px 15px 30px transparentize($cNoir, 0.2);
+
+	h2{
+		background-color: darken($cTurquoise, 10%);
+	}
 }
 
-.div_turquoise:hover{
+#grille_projets div:nth-child(3n+3){
+	box-shadow: inset 0 0 0 1000px transparentize(darken($cRose, 0.2), 0.6), 15px 15px 30px transparentize($cNoir, 0.2);
+
+	h2{
+		background-color: darken($cRose, 10%);
+	}
+}
+
+/* === Média: Tablette (640px) === */
+@media(min-width: 640px){
+#grille_projets div:nth-child(3n+1):hover{
+	box-shadow: inset 0 0 0 1000px transparentize(darken($cBleuFonce, 0.2), 1), 5px 5px 15px transparentize($cNoir, 0.2);
+}
+
+#grille_projets div:nth-child(3n+2):hover{
 	box-shadow: inset 0 0 0 1000px transparentize(darken($cTurquoise, 0.2), 1), 5px 5px 15px transparentize($cNoir, 0.2);
 }
 
-.div_bleuFonce:hover{
-	box-shadow: inset 0 0 0 1000px transparentize(darken($cBleuFonce, 0.2), 1), 5px 5px 15px transparentize($cNoir, 0.2);
+#grille_projets div:nth-child(3n+3):hover{
+	box-shadow: inset 0 0 0 1000px transparentize(darken($cRose, 0.2), 1), 5px 5px 15px transparentize($cNoir, 0.2);
 }
 }

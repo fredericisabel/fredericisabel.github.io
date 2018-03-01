@@ -1,49 +1,11 @@
 @import "variables";
-/* --- Body et fixed backgrounds --- */
-body{
-	display: flex;
-	flex-direction: column;
-	max-width: 100vw;
-	cursor: default;
-}
-
-.fixed_background{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    background-size: cover;
-}
-
-/* --- Séparation des sections --- */
-.division_couleurs{
-	display: flex;
-	flex-direction: row;
-
-	height: 5vh;
-	max-width: 100vw;
-	background-color: teal;
-
-	div{
-		height: 100%;
-		width: 33.3vw;
-		background-color: $cGris;
-	}
-}
-
-.div_couleur:first-child{
-	background-color: $cRose;
-}
-
-.div_couleur:last-child{
-	background-color: $cTurquoise;
-}
 
 /* --- Header --- */
 #body_accueil header{
 	display: flex;
 	flex-direction: column;
 
-	height: 90vh;
+	height: 75vh;
 	max-width: 100vw;
 	background: linear-gradient($cBleuFonce, $cBleuFonce),
 	url(../img/img_background1.jpg);
@@ -58,14 +20,40 @@ body{
 		h1{
 			height: 50%;
 			margin-bottom: 90px;
+			text-transform: uppercase;
 		}
 	}
 }
 
+/* --- Séparation des sections --- */
+.division_couleurs{
+	display: flex;
+	flex-direction: row;
+
+	height: 5vh;
+	width: 100vw;
+
+	div{
+		height: 100%;
+		width: 33.3%;
+		background-color: $cGris;
+	}
+}
+
+.div_couleur:first-child{
+	background-color: $cRose;
+}
+
+.div_couleur:last-child{
+	background-color: $cTurquoise;
+}
+
 /* --- Main contenu --- */
 #body_accueil main{
-	height: 155vh;
-	max-width: 100vw;
+	height: 100%;
+	width: 100vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 
 	display: flex;
 	align-content: center;
@@ -76,55 +64,42 @@ body{
 	#grille_projets{
 		display: flex;
 		flex-direction: column;
-		margin-top: 0;
 		
-		height: $hauteurGrille;
+		height: 80%;
 		width: 100%;
 
-		.grille_rangee{
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-
-			height: 50%;
+		div{
+			height: $projetHauteur / 3;
 			width: 100%;
-			margin-top: 10vh;
+			/*border: 2px solid white;*/
+			text-align: center;
+			margin: 0;
+			cursor: pointer;
 
-			div{
-				height: $projetHauteur / 3;
-				width: 100%;
-				/*border: 2px solid white;*/
-				text-align: center;
-				margin: 0;
-				cursor: pointer;
+			background: url(../img/img_cours1.png);
+		    background-repeat: no-repeat;
+		    background-size: cover;
 
-				background: url(../img/img_cours1.png);
-			    background-repeat: no-repeat;
-			    background-size: cover;
+			h2{
+				color: $cBlanc;
+				line-height: 150%;
+			}
 
-				h2{
-					color: $cBlanc;
-					line-height: 150%;
-				}
-
-				h2, h4{
-					text-shadow: 0 0 5px $cNoir;
-				}
+			h2, h4{
+				text-shadow: 0 0 5px $cNoir;
 			}
 		}
 	}
 }
-
-
 
 /* --- Footer --- */
 #body_accueil footer{
 	display: flex;
 	flex-direction: column;
 
-	height: 60vh;
+	height: 40vh;
 	max-width: 100vw;
-	background: linear-gradient(opacify($cBleuFonce, $headerFade), opacify($cBleuFonce, $headerFade)),
+	background: linear-gradient($cBleuFonce, $cBleuFonce),
 	url(../img/img_background1.jpg);
 	background-blend-mode: multiply;
 
@@ -133,7 +108,7 @@ body{
 		display: flex;
 		flex-direction: column;
 		align-self: center;
-		width: 90%;
+		width: 80%;
 		height: 90%;
 
 		p{
@@ -141,7 +116,7 @@ body{
 			align-items: center;
 
 			width: 100%;
-			height: 80%;
+			height: 100%;
 			text-align: center;
 			vertical-align: center;
 		}
@@ -175,14 +150,14 @@ body{
 @media(min-width: 640px){
 /* --- Header --- */
 #body_accueil header{
-	height: 95vh;
+	height: 75vh;
 
 	div{
 		height: 40%;
-		margin-top: 15%;
+		margin-top: 18%;
 
 		h1{
-			height: 50%;
+			height: 30%;
 			margin-bottom: 1vw;
 		}
 	}
@@ -190,61 +165,40 @@ body{
 
 /* --- Main contenu --- */
 #body_accueil main{
-	height: 100vh;
-	max-width: 100vw;
-
-	display: flex;
-	align-content: center;
-	$opacite: $mainFade;
-	background: linear-gradient($cGris, $cGris),
-	url(../img/main2.jpg);
-	background-blend-mode: lighten;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 
 	#grille_projets{
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 		margin: 0 auto;
-		margin-top: 5vw;
+		align-self: center;
 		
-		height: $hauteurGrille;
-		width: 100%;
+		height: 80%;
+		width: $projetLargeur * 2.1;
 
-		.grille_rangee{
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			align-self: center;
-			align-content: center;
-			margin-top: 0;
+		div{
+			height: $projetHauteur * 0.8;
+			width: 47.5%;
+			/*border: 2px solid white;*/
+			text-align: center;
+			margin: 1%;
+			transition: box-shadow 0.5s;
 
-			height: 50%;
-			width: 100%;
-
-			div{
-				height: $projetHauteur * 0.8;
-				width: $projetLargeur;
-				/*border: 2px solid white;*/
-				text-align: center;
-				margin: 1%;
-				transition: box-shadow 0.5s;
-
-				background: url(../img/img_cours1.png);
-			    background-repeat: no-repeat;
-			    background-size: cover;
-
-				h2{
-					margin-top: 8vh;
-					color: $cBlanc;
-					line-height: 150%;
-				}
+			h2{
+				margin-top: 8vh;
+				color: $cBlanc;
+				line-height: 150%;
 			}
 		}
+		
 	}
 }
 
 /* --- Footer --- */
 #body_accueil footer{
-	height: 60vh;
+	height: 40vh;
 
 	/* --- Conteneur texte et médias sociaux --- */
 	div:first-child{
@@ -264,7 +218,7 @@ body{
 			flex-direction: row;
 			align-self: center;
 
-			height: 20%;
+			height: 10%;
 			width: 142px;
 			margin: 0 auto;
 
@@ -319,20 +273,24 @@ body{
 
 /* --- Main contenu --- */
 #body_accueil main{
-	height: 95vh;
+	height: 91vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 
 	#grille_projets{
-	width: 80%;
+		align-self: center;
+		width: $projetLargeur * 3.2;
+		height: 80%;
 
-		.grille_rangee{
-			height: 50%;
-			width: $projetLargeur * 3;
-
-			div{
-				height: 90%;
-				width: $projetLargeur;
-			}
+		div{
+			height: $projetHauteur;
+			width: $projetLargeur;
 		}
 	}
+}
+
+/* --- Main contenu --- */
+#body_accueil footer{
+	height: 60vh;
 }
 }
