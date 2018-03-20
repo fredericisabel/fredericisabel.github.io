@@ -88,8 +88,8 @@
 	}
 
 	#contenu_images{
-		display: flex;
-		align-self: center;
+		display: block;
+		align-self: flex-start;
 		width: 100%;
 		height: 80%;
 		overflow: scroll;
@@ -169,12 +169,13 @@
 #body_projet main{
 	flex-direction: row;
 	width: 100vw;
-	height: 80vh;
+	height: 75%;
 
 	#contenu_texte{
-		width: 21%;
-		height: 96%;
+		width: 375px;
+		min-height: 96vh;
 		margin: 0;
+		padding-bottom: 0;
 
 		h2{
 			margin-top: 1%;
@@ -196,7 +197,7 @@
 		display: flex;
 		flex-direction: column;
 
-		height: 100%;
+		height: 100vh;
 		width: 2vw;
 
 		div{
@@ -207,12 +208,12 @@
 
 	#contenu_images{
 		width: 75%;
-		height: 80vh;
+		height: 100vh;
 		margin: 0;
 
 		#conteneur_images{
 			width: 80%;
-			padding: 5vh 0 5vh 0;
+			padding: 0;
 			
 			img{
 				width: 80%;
