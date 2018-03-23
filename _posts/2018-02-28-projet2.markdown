@@ -6,13 +6,18 @@ permalink: projet/:title
 
 title: TIM Maisonneuve
 type: Site Web
-images: 2
 text: Lors de notre cours de <i>Production Web</i>, nous étions mandatés de refaire le site web du TIM (Technique d'Intégration Multimédia) du Collège de Maisonneuve. Comme ce projet a été réalisé en équipe de 5, je vais me contenter de présenter le côté design, sur lequel j'ai principalement travaillé. <br><br> L'idée du projet était de créer un site qui saurait attirer les étudiants du secondaire, en leur donnant une bonne idée de ce qui pourrait les attendre s'ils choisissent ce programme. Il était donc important de représenter la grille des cours offerts de façon intéressante, tout en montrant de façon égale l'aspect création et programmation du programme. Cela se traduit dans notre projet par un design plus organique, qui comprend deux couleurs complémentaires, représentant les deux côtés de la technique.
 
-urlimgcover: /img/img_cours1.png
-urlimg1: ../img/img_cours1.png
-comment1: This is an image of something 1
-urlimg2: ../img/img_cours1.png
-comment2: This is an image of something 2
+urlimgcover: /img/img_sitetim1.png
+contenu:
+ - top-level: 1
+   commentaire: Commentaire 1
+   urlimg: ../img/img_sitetim1.png
+ - top-level: 2
+   commentaire: Commentaire 2
+   urlimg: ../img/img_sitetim2.png
+ - top-level: 3
+   commentaire: Commentaire 3
+   urlimg: ../img/img_sitetim3.png
 
 ---

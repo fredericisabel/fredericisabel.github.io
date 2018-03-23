@@ -6,13 +6,10 @@ permalink: projet/:title
 
 title: Kinetic Typography
 type: Vidéo
-images: 2
 text: Produit dans le cours de <i>Création vidéo II</i>, ce court vidéo était un projet libre qui devait comprendre certaines techniques de base de <i>Adobe After Effects</i>. <br><br> J'ai donc choisi de réaliser un vidéo de <i>kinetic typography</i>, puisque cela remplissait les critères et semblait être un style d'animation intéressant à explorer. La vidéo est basée sur les paroles de la chanson <i>Bang bang de Green Day</i> et possède, par conséquent, un style graphique semblable à celui qu'on peut retrouver sur l'album <i>Revolution Radio</i>.
 
-urlimgcover: /img/img_cours1.png
-urlimg1: ../img/img_cours1.png
-comment1: This is an image of something 1
-urlimg2: ../img/img_cours1.png
-comment2: This is an image of something 2
+urlimgcover: /img/cover_kinetictypo.png
+urlvideo: ../img/video_kinetictypo.mp4
+commentaire: This is an image of something 1
 
 ---

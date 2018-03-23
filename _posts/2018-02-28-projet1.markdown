@@ -6,13 +6,18 @@ permalink: projet/:title
 
 title: Desert Defender TD
 type: Jeu Unity 2D
-images: 2
 text: Réalisé dans le cadre du cours <i>Projet de recherche</i>, <i>Desert Defender TD</i> est en l'un de mes deux projets de fin d'études. Dans ce cours, nous avions l'option de réaliser le projet multimédia de notre choix. J'ai donc choisi de réaliser un jeu dans Unity 2D, programmé en C#. <br><br> <i>Desert Defender TD</i> est un jeu de <i>Tower Defense</i> assez standard, où le joueur doit empêcher les ennemis de se rendre à la fin du niveau. Mes objectifs principaux étaient de rendre le jeu aussi intéressant visuellement que plaisant à jouer. Par conséquent, c'est en quelque sorte la première fois où j'ai dû faire du <i>game balance</i>, afin que la difficulté semble juste, mais tout de même difficile.
 
-urlimgcover: /img/img_cours1.png
-urlimg1: ../img/img_cours1.png
-comment1: This is an image of something 1
-urlimg2: ../img/img_cours1.png
-comment2: This is an image of something 2
+urlimgcover: /img/img_desertdefender3.png
+contenu:
+ - top-level: 1
+   commentaire: Commentaire 1
+   urlimg: ../img/img_desertdefender1.png
+ - top-level: 2
+   commentaire: Commentaire 2
+   urlimg: ../img/img_desertdefender2.png
+ - top-level: 3
+   commentaire: Commentaire 3
+   urlimg: ../img/img_desertdefender3.png
 
 ---

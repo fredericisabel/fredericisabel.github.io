@@ -6,13 +6,24 @@ permalink: projet/:title
 
 title: Gallerie Photo
 type: Images
-images: 2
 text: 
 
-urlimgcover: /img/img_cours1.png
-urlimg1: ../img/img_cours1.png
-comment1: This is an image of something 1
-urlimg2: ../img/img_cours1.png
-comment2: This is an image of something 2
+urlimgcover: /img/img_gallerie2.jpg
+contenu:
+ - top-level: 1
+   commentaire: Commentaire 1
+   urlimg: ../img/img_gallerie1.jpg
+ - top-level: 2
+   commentaire: Commentaire 2
+   urlimg: ../img/img_gallerie2.jpg
+ - top-level: 3
+   commentaire: Commentaire 3
+   urlimg: ../img/img_gallerie3.jpg
+ - top-level: 4
+   commentaire: Commentaire 4
+   urlimg: ../img/img_gallerie4.jpg
+ - top-level: 5
+   commentaire: Commentaire 5
+   urlimg: ../img/img_gallerie5.jpg
 
 ---

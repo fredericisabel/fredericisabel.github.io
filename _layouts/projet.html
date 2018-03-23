@@ -25,12 +25,18 @@
 		</div>
 		<div id="contenu_images">
 			<div id="conteneur_images">
-				<img src="{{ page.urlimg1 }}">
-				<p>{{ page.comment1 }}</p>
-				<img src="{{ page.urlimg1 }}">
-				<p>{{ page.comment1 }}</p>
-				<img src="{{ page.urlimg2 }}">
-				<p>{{ page.comment2 }}</p>
+				{% if page.urlvideo != null %}
+				<video controls>
+				  <source src="{{ page.urlvideo }}" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+				{% endif %}
+				{% if page.contenu != null %}
+					{% for item in page.contenu %}
+						<br><br>
+						<img src="{{ item.urlimg }}">
+						<p>{{ item.commentaire }}</p>
+					{% endfor %}
+				{% endif %}
 			</div>
 		</div>
 	</main>
