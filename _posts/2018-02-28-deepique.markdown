@@ -8,13 +8,13 @@ title: Déépique
 type: Jeu Unity 3D
 text: Produit dans le cours de <i>Développement de Jeu</i>, ce jeu Unity est un des premiers projets de session que nous avions à faire. Dans notre équipe de 3, j'étais principalement responsable de définir l'univers du jeu; que ce soit l'histoire, l'environnement, les quêtes et les dialogues.<br><br>Notre but était de réaliser un jeu de rôle où le personnage avait l'option de combattre, compléter quelques quêtes et explorer. Il était donc important que l'environnement soit intéressant et rempli, afin de permettre au joueur d'avoir quelque chose à faire.
 
-urlimgcover: /img/img_deepique2.png
+urlimgcover: /img/img_deepique2.jpg
 contenu:
  - top-level: 1
    commentaire: Commentaire 1
-   urlimg: ../img/img_deepique1.png
+   urlimg: ../img/img_deepique1.jpg
  - top-level: 2
    commentaire: Commentaire 2
-   urlimg: ../img/img_deepique2.png
+   urlimg: ../img/img_deepique2.jpg
 
 ---

@@ -27,14 +27,19 @@
 			<div id="conteneur_images">
 				{% if page.urlvideo != null %}
 				<video controls>
-				  <source src="{{ page.urlvideo }}" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+				  <source src="{{ page.urlvideo }}" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' preload>
 				</video>
+				{% if page.commentaire != null %}
+					<p>{{ page.commentaire }}</p>
+				{% endif %}
 				{% endif %}
 				{% if page.contenu != null %}
 					{% for item in page.contenu %}
 						<br><br>
 						<img src="{{ item.urlimg }}">
-						<p>{{ item.commentaire }}</p>
+						{% if item.commentaire != null %}
+							<p>{{ item.commentaire }}</p>
+						{% endif %}
 					{% endfor %}
 				{% endif %}
 			</div>

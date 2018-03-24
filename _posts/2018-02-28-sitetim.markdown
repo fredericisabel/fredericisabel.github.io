@@ -11,13 +11,13 @@ text: Lors de notre cours de <i>Production Web</i>, nous étions mandatés de re
 urlimgcover: /img/img_sitetim1.png
 contenu:
  - top-level: 1
-   commentaire: Commentaire 1
+   commentaire: La page d'accueil de notre site, ainsi que l'en-tête des autres sections. Le titre et la navigation changent dynamiquement en fonction de la page.
    urlimg: ../img/img_sitetim1.png
  - top-level: 2
-   commentaire: Commentaire 2
+   commentaire: Les pages <i>Vie étudiante</i> et <i>Programme</i> affichent des images de la technique, ainsi que les cours offerts de façon plus organique.
    urlimg: ../img/img_sitetim2.png
  - top-level: 3
-   commentaire: Commentaire 3
+   commentaire: Version mobile du site.
    urlimg: ../img/img_sitetim3.png
 
 ---

@@ -81,6 +81,14 @@ a, a:link, a:visited, a:active{
 	text-decoration: none;
 }
 
+#contenu_texte{
+	a, a:link, a:visited, a:active{
+		color: $cBleuFonce;
+		text-decoration: underline;
+	}
+}
+
+
 /* === Média: Tablette (640px) === */
 @media(min-width: 640px){
 /* --- Polices --- */
