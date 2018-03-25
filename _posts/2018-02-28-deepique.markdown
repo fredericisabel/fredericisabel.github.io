@@ -11,10 +11,15 @@ text: Produit dans le cours de <i>Développement de Jeu</i>, ce jeu Unity est un
 urlimgcover: /img/img_deepique2.jpg
 contenu:
  - top-level: 1
-   commentaire: Commentaire 1
+   commentaire: Personnage et caméra à la première personne.
    urlimg: ../img/img_deepique1.jpg
  - top-level: 2
-   commentaire: Commentaire 2
+   commentaire:
    urlimg: ../img/img_deepique2.jpg
-
+ - top-level: 3
+   commentaire:
+   urlimg: ../img/img_deepique3.jpg
+ - top-level: 4
+   commentaire:
+   urlimg: ../img/img_deepique4.jpg
 ---
