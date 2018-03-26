@@ -8,8 +8,8 @@ title: Logo du TIM
 type: Vidéo
 text: Réalisé en <i>Création vidéo II</i>, ce projet nous amenait à créer une courte animation du logo du TIM qui serait utilisée à la fin de projets, un peu comme une <i>watermark</i>. <br><br> Comme ce vidéo a été réalisé dans une période d'examen, le principal défi était de créer un produit fini en moins de 3h. J'ai donc passé peu de temps sur l'idéation pour pouvoir me concentrer sur la réalisation. J'ai principalement improvisé en utilisant quelques principes de <i>kinetic typography</i>, ainsi que des formes graphiques simples.
 
-urlimgcover: /img/cover_logotim.jpg
-urlvideo: ../img/video_logotim.mp4
+urlimgcover: /img/logotim/cover_logotim.jpg
+urlvideo: ../img/logotim/video_logotim.mp4
 commentaire: 
 
 ---
